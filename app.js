@@ -5,7 +5,7 @@
   function set(id,v,html){var e=document.getElementById(id);if(!e)return;if(!v){e.style.display='none';return}html?e.innerHTML=v:e.textContent=v}
   set('hTag',c.tag);set('hTitle',c.title,true);set('hSub',c.sub);set('hIntro',c.intro);
   set('hMeta',[c.date,c.place].filter(Boolean).join(' · '));
-  if(c.title)document.title=c.title.replace(/<br\s*\/?>/g,' ')+' | 임한나의 AI 실습실';
+  if(c.title)document.title=c.title.replace(/<br\s*\/?>/g,' ')+' | AI 실습 페이지';
   var P=window.PROFILE||{};
   set('pName',P.name);set('pOne',[P.role,P.oneLine].filter(Boolean).join(' · '));
   var ul=document.getElementById('pLines');(P.lines||[]).forEach(function(l){var li=document.createElement('li');li.innerHTML='<em></em><span></span>';li.firstChild.textContent=l[0];li.lastChild.textContent=l[1];ul.appendChild(li)});
