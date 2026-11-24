@@ -13,7 +13,7 @@ window.LECTURES = {
   // 첫 화면 문구 (모든 강의 공통)
   default: {
     tag:   '인공지능의 AI × 정서지능의 AI · AI 실습 페이지',
-    title: '기술은 빠르게,<br>마음은 깊게',
+    title: 'AI 시대,<br>부모로 살아가기',
     sub:   '',
     date:  '',
     place: '',
