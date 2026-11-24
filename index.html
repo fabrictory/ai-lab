@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>임한나의 AI 실습실 | 덕스 미래 아카데미</title>
+<meta name="description" content="덕스 미래 아카데미 임한나 대표의 강의 실습 페이지. 답 대신 질문하는 AI, 마음을 읽는 대화, 말로 만드는 놀이, 안전 설정, 오늘의 에피소드.">
+<meta property="og:title" content="임한나의 AI 실습실 | 덕스 미래 아카데미">
+<meta property="og:description" content="기술은 빠르게, 마음은 깊게. 강의에서 함께 해 보는 실습 페이지입니다.">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+
+<header class="hero">
+<div class="shard" aria-hidden="true" style="left:-4%;top:78px;width:62%;height:14px;background:linear-gradient(90deg,rgba(255,255,255,0),#F7E0BC 40%,#CFE6FA 75%,#FFFFFF)"></div>
+<div class="shard" aria-hidden="true" style="left:6%;top:100px;width:46%;height:24px;animation-delay:-2s;background:linear-gradient(90deg,rgba(255,255,255,0),#F2BFDD 35%,#F7DDB4 70%,#FFFFFF)"></div>
+<div class="shard" aria-hidden="true" style="left:-2%;top:132px;width:52%;height:10px;animation-delay:-5s;background:linear-gradient(90deg,rgba(255,255,255,0),#B9DAF7 50%,#FFFFFF)"></div>
+<div class="shard" aria-hidden="true" style="left:14%;bottom:22px;width:58%;height:20px;animation-delay:-6s;background:linear-gradient(90deg,rgba(255,255,255,0),#F2BFDD 30%,#F7DDB4 60%,#FFFFFF)"></div>
+<div class="shard" aria-hidden="true" style="left:4%;bottom:0;width:48%;height:28px;animation-delay:-3s;background:linear-gradient(90deg,rgba(255,255,255,0),#B9DAF7 35%,#E3C6F3 70%,#FFFFFF)"></div>
+<div class="wrap">
+<div class="giant" aria-hidden="true">AI×<br>AI</div>
+<div class="topbar"><div class="brand">DUX FUTURE ACADEMY</div><a class="cta" id="topApply" href="#camp">상하이 캠프 신청</a></div>
+<div class="herotext">
+<span class="tag" id="hTag"></span>
+<h1 id="hTitle"></h1>
+<p class="sub" id="hSub"></p>
+<p class="meta" id="hMeta"></p>
+<p id="hIntro"></p>
+<div class="loop" aria-label="오늘의 순서"><span><b>SEE</b>봅니다</span><span><b>FEEL</b>말합니다</span><span><b>MAKE</b>만듭니다</span></div>
+<div class="progress"><div class="num"><span id="doneN">0</span><small>/ <span id="totalN">0</span> 완료</small></div><div class="bar"><i id="barFill"></i></div></div>
+<div class="herolinks"><a class="textlink" href="#camp">2027. 1. 27–30 상하이 캠프 보기 →</a><a class="textlink" href="#me">강사 임한나 →</a></div>
+</div></div>
+</header>
+
+<nav class="tabs"><div class="wrap">
+<button class="tab on" data-t="0">준비</button>
+<button class="tab" data-t="1">① 답 대신 질문</button>
+<button class="tab" data-t="2">② 마음 읽는 대화</button>
+<button class="tab" data-t="3">③ 말로 만드는 놀이</button>
+<button class="tab" data-t="4">고치는 말</button>
+<button class="tab" data-t="5">안전 설정</button>
+<button class="tab" data-t="6">우리 집 약속</button>
+<button class="tab" data-t="7">오늘의 에피소드</button>
+<button class="tab camp" data-t="camp">상하이 캠프 ↓</button>
+</div></nav>
+
+<main class="main">
+
+<!-- ===================== 준비 ===================== -->
+<section class="panel on" id="p-0">
+<p class="lead">오늘은 <b>어른이 먼저</b> 써 보는 날입니다. AI는 아는 만큼이 아니라 <b>써 본 만큼</b> 보입니다.</p>
+<div class="card" data-id="r1"><div class="head"><div class="step">1</div><div><h3>앱 하나만 여세요</h3><div class="app">무료 계정이면 충분 · 셋 중 아무거나</div></div></div><div class="links"><a href="https://chatgpt.com" target="_blank" rel="noopener">챗GPT</a><a href="https://gemini.google.com" target="_blank" rel="noopener">제미나이</a><a href="https://claude.ai" target="_blank" rel="noopener">클로드</a></div><p class="tip">앱이 없으면 위 주소를 눌러 웹에서 써도 됩니다. 로그인이 막히면 <b>옆자리 분 화면을 같이</b> 보셔도 괜찮아요.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="r2"><div class="head"><div class="step">2</div><div><h3>마이크 버튼을 찾으세요</h3><div class="app">입력창 오른쪽 · 받아쓰기</div></div></div><p class="tip">마이크를 누르고 <b>평소 말하듯</b> 말하면 글자로 바뀝니다. 말이 매끈하지 않아도 AI는 알아듣습니다. 물결 모양 버튼은 음성 대화 모드라 오늘은 누르지 않아요.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="box"><h3>오늘 실습은 어떤 순서로 하나요?</h3><ul><li><b>SEE 봅니다</b>: 같은 질문에도 AI가 다르게 답한다는 걸 눈으로 봅니다. (①)</li><li><b>FEEL 말합니다</b>: AI를 정답 기계가 아니라 <b>마음을 묻는 연습 상대</b>로 써 봅니다. (②)</li><li><b>MAKE 만듭니다</b>: 말로 만들고 고치고, 우리 집 약속과 오늘의 에피소드로 이어 갑니다. (③ ~ 마지막 탭)</li></ul></div>
+<div class="box warn"><h3>넣지 않는 다섯 가지</h3><ul><li>이름 (실명 대신 “우리 아이”)</li><li>유치원·학교 · 반 · 선생님 이름</li><li>사는 곳 · 동호수</li><li>아이 얼굴 사진</li><li>아이 목소리 녹음</li></ul></div>
+</section>
+
+<!-- ===================== ① 답 대신 질문 ===================== -->
+<section class="panel" id="p-1">
+<span class="stage">SEE<em>봅니다</em></span>
+<p class="lead">같은 AI에게 같은 문제를 <b>두 번</b> 물어봅니다. 한 번은 그냥, 한 번은 <b>“힌트만 줘”</b>. 무엇이 다른지 눈으로 보세요.</p>
+<div class="card" data-id="a1"><div class="head"><div class="step">A</div><div><h3>그냥 물어보기</h3><div class="app">결과: 답 하나로 끝</div></div></div><div class="say gray" onclick="cp(this)"><div class="lbl">이렇게 말해 보세요</div><div class="txt">삼각형의 두 각이 40도와 80도야. 나머지 한 각은 몇 도야?</div><div class="hint">누르면 복사</div></div><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="a2"><div class="head"><div class="step">B</div><div><h3>힌트만 달라기 <span style="font-size:14px;color:var(--accent)">← 오늘의 핵심</span></h3><div class="app">결과: 질문이 돌아온다</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">이렇게 말해 보세요</div><div class="txt">너는 우리 아이의 공부 파트너야. 절대 답을 바로 알려주지 말고, 아이가 스스로 풀 수 있게 힌트를 한 단계씩만 줘. 아이가 답을 말하면 왜 그런지 물어봐 줘.
+문제: 삼각형의 두 각이 40도와 80도야. 나머지 한 각은?</div><div class="hint">누르면 복사</div></div><div class="ask"><div class="lbl">비교해 보세요</div><div class="q">A는 숙제를 끝내 주고, B는 생각을 시작하게 합니다.</div></div><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="a3"><div class="head"><div class="step">3</div><div><h3>다른 주제로 바꿔 보기</h3><div class="app">밑줄 친 곳만 바꾸면 됩니다</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">그림책 읽은 뒤</div><div class="txt">우리 아이와 그림책 <u>(책 제목)</u>을 읽었어. 줄거리를 설명하지 말고, 아이가 자기 생각을 말하게 하는 질문을 세 개만 만들어 줘. 사실 질문 하나, 해석 질문 하나, 아이 자신과 연결하는 질문 하나로.</div><div class="hint">누르면 복사</div></div><div class="say" onclick="cp(this)"><div class="lbl">글쓰기</div><div class="txt">너는 우리 아이의 글쓰기 선생님이야. 아이가 쓴 첫 문장을 고쳐 주지 말고, 생각을 넓히는 질문을 세 개만 해 줘. 아이의 첫 문장: <u>(아이가 쓴 문장)</u></div><div class="hint">누르면 복사</div></div><p class="tip">앱마다 <b>공부 모드</b>가 있어요. 챗GPT는 입력창의 + 에서 <b>‘공부하기’</b>, 제미나이는 도구 목록의 <b>‘가이드 학습’</b>. 메뉴를 못 찾으면 <b>“답은 말하지 말고 힌트만 줘”</b> 한 줄이면 됩니다.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="box"><h3>나이에 따라 받쳐 주는 높이가 다릅니다</h3><p class="tip" style="margin-bottom:6px">비계(발판)는 아이가 자랄수록 낮추고, 결국엔 걷어 냅니다.</p><div class="age"><div><b>유아기</b><span>AI는 부모 손에. 아이는 말하고, 어른이 대신 입력합니다. 놀잇감으로만.</span></div><div><b>초등기</b><span>정답 대신 힌트. 아이가 먼저 말하고, AI는 마지막에.</span></div><div><b>중등기</b><span>내 생각을 먼저 쓰고, AI에게 반론과 빠진 근거를 묻습니다.</span></div><div><b>고등기</b><span>출처를 두 곳 이상에서 확인하고, 어디까지 AI가 했는지 밝힙니다.</span></div></div></div>
+</section>
+
+<!-- ===================== ② 마음 읽는 대화 ===================== -->
+<section class="panel" id="p-2">
+<span class="stage">FEEL<em>말합니다</em></span>
+<p class="lead">기술의 AI가 있다면 마음의 AI도 있습니다. <b>정서지능(Affective Intelligence)도 AI</b>입니다. AI에게 마음을 맡기지 않고, <b>마음을 묻는 연습</b>을 함께 합니다.</p>
+<div class="card" data-id="e1"><div class="head"><div class="step">1</div><div><h3>발문 네 계단</h3><div class="app">가르치지 않고 발견하게 하는 질문 · AI 켜기 전</div></div></div><div class="ask"><div class="lbl">① 감정 알아차리기</div><div class="q">“지금 마음이 어때?”</div></div><div class="ask"><div class="lbl">② 이름 붙이기</div><div class="q">“그 마음에 이름을 붙인다면 뭘까?”</div></div><div class="ask"><div class="lbl">③ 관점 바꾸기</div><div class="q">“그때 친구는 어떤 마음이었을까?”</div></div><div class="ask"><div class="lbl">④ 행동 찾기</div><div class="q">“다음에 비슷한 일이 생기면 어떻게 해 볼까?”</div></div><p class="tip">한 계단씩, <b>대답을 기다리는 시간</b>이 질문만큼 중요합니다.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="e2"><div class="head"><div class="step">2</div><div><h3>우리 집 상황으로 발문 만들기</h3><div class="app">밑줄만 우리 집 이야기로</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">이렇게 말해 보세요</div><div class="txt">너는 정서지능 교육을 하는 유아교육 선생님이야. 오늘 우리 아이(<u>6</u>살)가 <u>친구가 블록 탑을 무너뜨려서 울었어</u>. 내가 아이에게 건넬 질문을 감정 알아차리기 → 이름 붙이기 → 관점 바꾸기 → 행동 찾기 네 단계로 하나씩만 만들어 줘. 가르치는 말이 아니라, 아이가 스스로 발견하게 하는 질문으로.</div><div class="hint">누르면 복사</div></div><p class="tip">AI가 만든 질문은 <b>초안</b>입니다. 우리 아이가 쓰는 말투로 한 번 바꿔 말해 보세요.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="e3"><div class="head"><div class="step">3</div><div><h3>감정 단어 넓히기</h3><div class="app">“짜증 나”만 있던 아이에게</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">이렇게 말해 보세요</div><div class="txt"><u>속상하다</u>와 비슷하지만 조금씩 다른 감정 단어를 다섯 개 알려 줘. 단어마다 <u>유치원생</u>도 알아들을 예시 상황을 한 줄씩 붙여 줘.</div><div class="hint">누르면 복사</div></div><div class="chips"><button class="chip" onclick="cp(this)">이 감정 단어 다섯 개로 아이와 할 수 있는 몸 놀이 하나를 알려 줘. 준비물 없이.</button><button class="chip" onclick="cp(this)">이 감정 단어들을 색깔에 하나씩 짝지어 줘. 아이에게 “오늘 마음은 무슨 색이야?”라고 물어볼 거야.</button></div><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="e4"><div class="head"><div class="step">4</div><div><h3>어른이 연습하는 역할 놀이</h3><div class="app">AI가 아이 역할, 나는 부모 역할</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">이렇게 말해 보세요</div><div class="txt">너는 <u>7</u>살 아이 역할을 해 줘. 놀이터에서 친구와 다퉈서 속상한 상태야. 내가 부모로서 말을 걸면 아이처럼 짧게 대답해 줘. 대화가 다섯 번 오가면 역할을 멈추고, 내 말 중 아이 마음을 열어 준 말 하나와 닫은 말 하나를 알려 줘.</div><div class="hint">누르면 복사</div></div><p class="tip">실제 아이 앞에서 서두르지 않도록, <b>AI 앞에서 먼저 실수해 보는</b> 연습입니다.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="box warn"><h3>AI는 아이 마음을 대신 읽어 주지 않습니다</h3><ul><li>AI의 답은 <b>연습 상대</b>일 뿐, 우리 아이에 대한 판단이 아닙니다.</li><li>아이의 걱정이 길게 이어지면 AI가 아니라 <b>선생님·전문가와 이야기</b>해 주세요.</li><li>아이의 실제 대화를 그대로 옮겨 적지 말고, 상황만 짧게 바꿔 말해 주세요.</li></ul></div>
+</section>
+
+<!-- ===================== ③ 말로 만드는 놀이 ===================== -->
+<section class="panel" id="p-3">
+<span class="stage">MAKE<em>만듭니다</em></span>
+<p class="lead">아이의 <b>말</b>이 글씨가 되고, 글씨가 그림이 되고, 그림이 <b>동시와 놀이</b>가 됩니다. AI는 빠르게, 오감은 천천히.</p>
+<div class="card" data-id="b1"><div class="head"><div class="step">1</div><div><h3>떠올리기: 특징 세 가지</h3><div class="app">AI 켜기 전 · 30초</div></div></div><div class="ask"><div class="lbl">아이와 함께라면, 아이에게</div><div class="q">“무엇을 만들어 보고 싶어? 꼭 들어갔으면 하는 것 세 가지만 말해 줄래?”</div></div><div class="ask"><div class="lbl">혼자라면, 나에게</div><div class="q">“내가 일곱 살 때 제일 좋아했던 건 뭐였지?”</div></div><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="b2"><div class="head"><div class="step">2</div><div><h3>말로 그리기</h3><div class="app">마이크로 보내기</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">아이와 함께라면 · 밑줄은 아이 말로</div><div class="txt">내가 생각한 친구를 그려 줘. 머리에는 <u>(귤 모양 모자)</u>를 쓰고 있고, 등에는 <u>(작은 날개)</u>가 있고, 웃으면 <u>(눈이 반달)</u>이 돼. 따뜻한 그림책 느낌으로, 글자는 넣지 마.</div><div class="hint">누르면 복사</div></div><div class="say" onclick="cp(this)"><div class="lbl">혼자 오셨다면 · 내 어린 시절로</div><div class="txt">내가 일곱 살 때 제일 좋아했던 걸로 그림책 주인공을 만들고 싶어. 나는 <u>(고무줄놀이)</u>를 좋아했어. 그걸 닮은 주인공을 그려 줘. 오늘 저녁 우리 아이한테 보여 줄 거야.</div><div class="hint">누르면 복사</div></div><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="b3"><div class="head"><div class="step">3</div><div><h3>살펴보고 다시 말하기 <span style="font-size:14px;color:var(--accent)">← 핵심</span></h3><div class="app">한 번에 하나씩만 고치기</div></div></div><div class="ask"><div class="lbl">결과를 보고</div><div class="q">“내 생각과 어디가 달라?”</div></div><div class="say" onclick="cp(this)"><div class="lbl">이렇게</div><div class="txt">좋아. 그런데 <u>모자</u>를 더 크게 해 주고, 표정은 <u>더 웃는 얼굴</u>로 바꿔 줘. 나머지는 그대로 둬.</div><div class="hint">누르면 복사</div></div><div class="chips"><button class="chip" onclick="cp(this)">색을 더 부드럽게 해 줘. 나머지는 그대로 둬.</button><button class="chip" onclick="cp(this)">배경을 우리 동네 공원으로 바꿔 줘. 나머지는 그대로 둬.</button><button class="chip" onclick="cp(this)">아까 그림이 더 좋았어. 거기서 신발만 빨간색으로.</button></div><p class="tip"><b>“나머지는 그대로 둬”</b>가 마법의 말입니다. 이 말이 없으면 좋았던 부분까지 바뀔 수 있어요.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="b4"><div class="head"><div class="step">4</div><div><h3>그림에서 동시로</h3><div class="app">마지막 한 줄은 아이의 것</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">이렇게 말해 보세요</div><div class="txt">이 그림을 보고 아이가 소리 내어 읽을 동시를 네 줄로 써 줘. 마지막 줄은 비워 두고, 아이가 채우게 해 줘.</div><div class="hint">누르면 복사</div></div><div class="say" onclick="cp(this)"><div class="lbl">(선택) 대화창 안 미니 게임</div><div class="txt">방금 그린 친구가 문제를 내는 아주 쉬운 퀴즈 게임을 대화창 안에서 바로 해 볼 수 있게 만들어 줘. 문제는 다섯 개, <u>유치원생</u> 눈높이로, 버튼을 눌러서 고르게.</div><div class="hint">누르면 복사</div></div><p class="tip">게임 대신 글자(코드)만 나오면 “화면으로 보여 줘”라고 한 번 더 말해 보세요. 그리고 화면을 끄고, <b>그림 속 친구를 종이에 따라 그려 보기</b>까지 이어 가 주세요.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="box warn"><h3>알아두기</h3><ul><li>무료 계정은 <b>그림 만들기 횟수에 하루 제한</b>이 있어요. 한 장을 정성껏.</li><li>유명 만화·게임 캐릭터는 그려 주지 않을 수 있어요. <b>새로 지어낸 친구</b>가 더 잘 나옵니다.</li><li>마음에 드는 그림은 꾹 눌러 저장해 두세요.</li></ul></div>
+</section>
+
+<!-- ===================== 고치는 말 ===================== -->
+<section class="panel" id="p-4">
+<p class="lead">AI를 잘 쓰는 비결은 첫 문장이 아니라 <b>두 번째, 세 번째 말</b>에 있습니다. 누르면 복사됩니다.</p>
+<div class="fixgrid">
+<div class="fix" onclick="cp(this)"><div class="k">더하기</div><div class="v txt">(  )도 넣어 줘.</div><div class="e">예: 강아지 친구도 넣어 줘</div></div>
+<div class="fix" onclick="cp(this)"><div class="k">빼기</div><div class="v txt">(  )는 빼 줘.</div><div class="e">예: 뒤에 있는 나무는 빼 줘</div></div>
+<div class="fix" onclick="cp(this)"><div class="k">바꾸기</div><div class="v txt">(  )를 (  )로 바꿔 줘.</div><div class="e">예: 파란 모자를 빨간 모자로</div></div>
+<div class="fix" onclick="cp(this)"><div class="k">크기·속도</div><div class="v txt">조금 더 크게 / 더 느리게 해 줘.</div><div class="e">숫자로 말하면 더 정확해요: “두 배 크게”</div></div>
+<div class="fix" onclick="cp(this)"><div class="k">지키기</div><div class="v txt">나머지는 그대로 둬.</div><div class="e">좋은 부분을 지키는 마법의 말</div></div>
+<div class="fix" onclick="cp(this)"><div class="k">정확히 하기</div><div class="v txt">내가 말한 (  )는 (  )라는 뜻이야.</div><div class="e">예: “작게는 손바닥만 하게라는 뜻이야”</div></div>
+<div class="fix" onclick="cp(this)"><div class="k">결 지키기</div><div class="v txt">너무 정리된 느낌이야. 일기처럼 자연스럽게 다시 써 줘.</div><div class="e">AI 티를 걷어 내고 내 목소리로</div></div>
+<div class="fix" onclick="cp(this)"><div class="k">되돌리기</div><div class="v txt">아까 두 번째 게 더 좋았어. 그걸로 다시 해 줘.</div><div class="e">마음에 든 버전으로 돌아가기</div></div>
+</div>
+<div class="section-h">아이에게 건네는 질문 네 가지</div>
+<div class="card" data-id="qs"><div class="head"><div class="step">?</div><div><h3>오늘 저녁 그대로 쓰세요</h3><div class="app">프롬프트 공식이 아니라 대화</div></div></div><div class="ask"><div class="lbl">시작할 때</div><div class="q">무엇을 만들어 보고 싶어?</div></div><div class="ask"><div class="lbl">말하기 전에</div><div class="q">꼭 들어갔으면 하는 건 뭐야?</div></div><div class="ask"><div class="lbl">결과를 본 뒤에</div><div class="q">나온 결과가 네 생각과 어디가 달라?</div></div><div class="ask"><div class="lbl">마무리할 때</div><div class="q">친구가 해 본다면 무엇을 알려 줘야 할까?</div></div><button class="done" onclick="dn(this)">완료 표시</button></div>
+</section>
+
+<!-- ===================== 안전 설정 ===================== -->
+<section class="panel" id="p-5">
+<p class="lead">막는 법이 아니라 <b>지키는 법</b>입니다. 챗GPT 기준 설정과 습관, 그리고 꼭 알아 둘 법.</p>
+<div class="box"><h3>AI에도 나이 기준이 있습니다</h3><ul><li><b>챗GPT</b>: 만 13세 이상, 만 18세 미만은 보호자 동의</li><li><b>제미나이</b>: 구글 계정 나이 기준을 따르고, 어린이는 부모가 관리하는 패밀리 링크 계정으로(국가별 적용 다름)</li><li><b>클로드</b>: 만 18세 이상</li><li>유아·초등은 <b>부모 계정으로, 부모 곁에서</b>.</li></ul></div>
+<div class="card" data-id="s1"><div class="head"><div class="step">1</div><div><h3>메모리 확인</h3><div class="app">프로필(내 이름) → 개인 맞춤 설정 → 메모리 → 메모리 관리</div></div></div><p class="tip">AI가 우리 집에 대해 무엇을 기억하고 있는지 열어 보세요. 아이 이름·기관처럼 남기고 싶지 않은 내용은 <b>하나씩 지울 수 있습니다</b>.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="s2"><div class="head"><div class="step">2</div><div><h3>임시 채팅</h3><div class="app">대화창 오른쪽 위 아이콘 → 임시 채팅 켜기</div></div></div><p class="tip">켜 두면 대화 기록과 메모리에 남지 않습니다. 아이 이야기를 물어볼 때 쓰세요. 다만 안전 확인을 위해 <b>최대 30일까지 보관</b>될 수 있습니다.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="s3"><div class="head"><div class="step">3</div><div><h3>학습에 쓰지 않게</h3><div class="app">프로필 → 설정 → 데이터 제어</div></div></div><p class="tip"><b>‘모두를 위한 모델 개선’</b>을 꺼 두세요. 우리 대화가 AI 학습에 쓰이지 않습니다.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="s4"><div class="head"><div class="step">4</div><div><h3>설정에 한 번만 적어 두기</h3><div class="app">챗GPT · 설정 → 개인 맞춤 설정 → 맞춤형 지침</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">그대로 붙여 넣기 · 밑줄만 바꾸기</div><div class="txt">이 계정은 <u>7살</u> 아이와 부모가 함께 씁니다. 아이 눈높이에 맞는 쉬운 말로 짧게 답해 주세요. 공부 질문에는 정답을 바로 주지 말고, 힌트를 한 단계씩 주면서 아이가 먼저 생각하게 해 주세요. 아이의 감정 이야기에는 판단하지 말고, 먼저 마음을 물어봐 주세요. 확실하지 않은 내용은 확실하지 않다고 말해 주세요.</div><div class="hint">누르면 복사</div></div><p class="tip">제미나이·클로드는 대화 첫 줄에 같은 문장을 붙이면 됩니다.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="s5"><div class="head"><div class="step">5</div><div><h3>AI는 틀려도 당당합니다</h3><div class="app">답이 나온 직후에 이어서</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">습관처럼 붙이기</div><div class="txt">방금 답한 내용 중에 확실하지 않은 부분을 표시해 줘. 그리고 반대 의견이나 반대 근거가 있다면 그것도 말해 줘.</div><div class="hint">누르면 복사</div></div><p class="tip">숫자·날짜·이름은 <b>책과 믿을 만한 자료 두 곳</b>에서 확인합니다. 열리지 않는 링크는 지어낸 것일 수 있어요.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="s6"><div class="head"><div class="step">6</div><div><h3>가족 암호 정하기</h3><div class="app">목소리도 얼굴도 몇 초면 흉내 내는 시대</div></div></div><p class="tip">“엄마 나 급해” 같은 전화가 오면 <b>우리만 아는 질문</b>으로 확인하세요. 예: “우리 강아지 이름 거꾸로 말해 봐.”</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="box warn"><h3>법도 이미 움직이고 있습니다</h3><ul><li><b>딥페이크 성적 허위영상물</b>: 만들고 퍼뜨리는 것만이 아니라 <b>가지고 있거나 보기만 해도</b> 처벌받습니다(성폭력처벌법, 2024년 10월 개정).</li><li><b>인공지능기본법(2026.1.22 시행)</b>: AI 회사는 AI가 만든 결과물임을 알려야 합니다. 우리 집에서도 <b>“어디까지 AI가 했는지” 적어 두는 습관</b>으로 옮겨 봅니다.</li></ul></div>
+</section>
+
+<!-- ===================== 우리 집 약속 ===================== -->
+<section class="panel" id="p-6">
+<p class="lead">『AI 시대, 부모로 살아가기』에 담은 저희 집 기준입니다. 정답이 아니라 <b>우리 집 기준을 정하는 출발점</b>으로 써 주세요.</p>
+<div class="rule"><div class="n">1</div><div><h3>AI는 놀잇감으로 시작합니다</h3><p>숙제 도우미가 아니라 그림·이야기·놀이로. 어른이 먼저 써 보고 아이를 초대합니다.</p></div></div>
+<div class="rule"><div class="n">2</div><div><h3>15세 전엔 독립 계정 없이</h3><p>부모 계정으로, 나란히 앉아서 함께 씁니다.</p></div></div>
+<div class="rule"><div class="n">3</div><div><h3>시간을 정해 두고 씁니다</h3><p>“타이머 울리면 오늘 버전 저장하고 끝.” 시작과 멈춤을 함께 정합니다. 멈춤도 놀이만큼 중요합니다.</p></div></div>
+<div class="rule"><div class="n">4</div><div><h3>두 번까지는 기회, 세 번째는 기준</h3><p>어기면 두 번은 이야기하고, 세 번째에는 반드시 지킵니다.</p></div></div>
+<div class="rule"><div class="n">5</div><div><h3>선택권이 있다고 착각하게 하지 않습니다</h3><p>정한 기준은 부모가 지킵니다. 대신 이유는 꼭 설명합니다.</p></div></div>
+<div class="box"><h3>AI로 한 숙제를 발견했을 때, 첫마디</h3><ul><li>숨기게 하는 말: “너 이거 AI로 했지?” “앞으로 쓰지 마.”</li><li><b>보여 주게 하는 말</b>: <b>“이거 어떻게 했는지 설명해 줄래?”</b> “어디가 막혔어?” “엄마도 궁금해, 같이 해 볼까?”</li></ul></div>
+<div class="card" data-id="home1"><div class="head"><div class="step">✓</div><div><h3>우리 집 한 줄 쓰기</h3><div class="app">이 휴대폰에만 저장됩니다</div></div></div><textarea class="line-in" id="myline" placeholder="예: 우리 집은 AI를 쓰기 전에 먼저 아이에게 묻는다."></textarea><div class="say" onclick="cp(this)"><div class="lbl">AI와 같이 다듬기</div><div class="txt">우리 집 AI 약속을 만들고 있어. 아이는 <u>(7)</u>살이고, 지금 고민은 <u>(아이가 AI한테 그림만 계속 그려 달라고 하는 것)</u>이야. 아이가 지킬 수 있게 쉬운 말로, 세 줄짜리 약속 초안을 만들어 줘. 그리고 아이에게 의견을 물어볼 질문도 하나 붙여 줘.</div><div class="hint">누르면 복사</div></div><button class="done" onclick="dn(this)">완료 표시</button></div>
+</section>
+
+<!-- ===================== 오늘의 에피소드 ===================== -->
+<section class="panel" id="p-7">
+<p class="lead">AI 시대일수록 <b>에피소드</b>가 더 귀해집니다. 에피소드는 아이가 궁금한 무언가를 꺼내는 1~2분. 그 순간을 붙잡는 어른의 방식이 <b>페다고지</b>입니다.</p>
+<div class="box"><h3>순서를 바꾸지 마세요</h3><ul><li>AI를 쓰려고 에피소드를 만드는 게 아니라, <b>에피소드를 붙잡으려고 AI를 씁니다</b>.</li><li>“매미는 왜 안 울어?” “나도 게임 만들고 싶어!” 이런 말이 나오면 하던 일을 잠깐 멈춰 주세요.</li><li>도구는 무엇이든 괜찮아요. 종이와 연필도, AI도.</li></ul></div>
+<div class="card" data-id="h1"><div class="head"><div class="step">1</div><div><h3>에피소드를 놀이로 잇기</h3><div class="app">답 대신 함께 찾을 거리</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">이렇게</div><div class="txt">오늘 우리 아이(<u>6</u>살)가 <u>“매미는 왜 겨울에 안 울어?”</u>라고 물었어. 답을 바로 알려 주지 말고, 아이와 함께 찾아볼 수 있는 질문 세 개와 집에서 해 볼 수 있는 오감 활동 하나를 제안해 줘. 준비물은 집에 있는 것으로.</div><div class="hint">누르면 복사</div></div><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="h2"><div class="head"><div class="step">2</div><div><h3>잠자리 동화 번갈아 짓기</h3><div class="app">가족 모두</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">이렇게</div><div class="txt">우리 가족이 한 문장씩 이야기를 이어서 동화를 만들 거야. 너는 차례가 오면 딱 한 문장만 보태 줘. 첫 문장은 아이가 할게: <u>(아이의 첫 문장)</u></div><div class="hint">누르면 복사</div></div><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="h3"><div class="head"><div class="step">3</div><div><h3>AI 틀리게 만들기 놀이</h3><div class="app">아이가 듣는 사람에서 확인하는 사람으로</div></div></div><div class="say" onclick="cp(this)"><div class="lbl">이렇게</div><div class="txt">우리 아이가 너한테 문제를 낼 거야. 네가 틀리면 아이가 이유를 설명해 줄 거야. 아이 설명이 맞으면 “네 덕분에 알았어”라고 말해 줘.</div><div class="hint">누르면 복사</div></div><p class="tip">마지막에 아이에게: <b>“AI가 놓친 건 뭐였을까?”</b></p><button class="done" onclick="dn(this)">완료 표시</button></div>
+<div class="card" data-id="h4"><div class="head"><div class="step">✎</div><div><h3>오늘의 에피소드 한 줄</h3><div class="app">이 휴대폰에만 저장됩니다</div></div></div><textarea class="line-in" id="myepisode" placeholder="예: 저녁 먹다가 아이가 '달은 왜 따라와?'라고 물었다. 같이 베란다에 나가 봤다."></textarea><p class="tip">날짜와 아이의 말 한마디만 적어도 충분합니다. 쌓이면 우리 집의 이야기가 됩니다.</p><button class="done" onclick="dn(this)">완료 표시</button></div>
+</section>
+</main>
+
+<!-- ===================== 덕스 미래 아카데미 캠프 (내용은 config.js의 CAMP) ===================== -->
+<section class="campband" id="camp"><div class="in">
+<div class="giant" aria-hidden="true">AI×<br>AI</div>
+<div class="k" id="cKicker"></div>
+<h2 id="cTitle"></h2>
+<p class="lead" id="cLead"></p>
+<dl class="spec" id="cSpec"></dl>
+<div class="sfm" id="cSfm"></div>
+<p class="notice" id="cNotice"></p>
+<div class="apply"><a class="go" id="cApply" target="_blank" rel="noopener">참가 신청하기 →</a><a class="more" id="cMore" target="_blank" rel="noopener">캠프 자세히 보기</a></div>
+</div></section>
+
+<!-- ===================== 강사 소개 ===================== -->
+<section class="me" id="me"><div class="in">
+<div class="k">강사 소개</div>
+<h3 id="pName"></h3>
+<p id="pOne"></p>
+<ul class="prof" id="pLines"></ul>
+<div class="links" id="pLinks"></div>
+</div></section>
+<section class="bio"><h3>『AI 시대, 부모로 살아가기』</h3>
+<p><b>김덕진</b> · 기술을 보는 아빠. <b>임한나</b> · 마음을 보는 엄마.</p>
+<p style="color:var(--muted)">사랑으로 키워 사람으로 살게 한다. 책의 마지막 문장입니다.</p></section>
+<p class="foot" id="foot"></p>
+
+<div class="fs"><button onclick="qr(true)" aria-label="QR 코드 보기">QR</button><button onclick="fz(-1)" aria-label="글자 작게">가-</button><button onclick="fz(1)" aria-label="글자 크게">가+</button></div>
+<div class="qr" id="qr" onclick="qr(false)"><div class="in" onclick="event.stopPropagation()"><h3>휴대폰으로 같이 열기</h3><div id="qrc"></div><div class="u" id="qru"></div><button class="done" onclick="qr(false)">닫기</button></div></div>
+<div class="toast" id="toast">복사됐어요! 붙여넣거나 소리 내어 말해 보세요</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
