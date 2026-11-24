@@ -23,7 +23,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .topbar a.cta:hover{background:var(--ink);color:#fff}
 .herotext{position:relative;padding-top:120px;padding-bottom:30px}
 .tag{display:block;font-size:14px;font-weight:500;margin-bottom:14px}
-.hero h1{font-size:clamp(34px,7vw,56px);font-weight:500;line-height:1.16;letter-spacing:-.035em;margin-bottom:14px}
+.hero h1{font-size:clamp(44px,10vw,80px);font-weight:800;line-height:1.12;letter-spacing:-.04em;margin-bottom:16px}
 .hero .sub{font-size:18px;font-weight:500;margin-bottom:6px}
 .hero .meta{font-size:14px;color:var(--muted);margin-bottom:16px}
 .hero #hIntro{max-width:560px;font-size:16px;font-weight:300;margin-bottom:22px}
